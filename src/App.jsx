@@ -3,6 +3,7 @@ import Navbar from './components/Navbar.jsx';
 import Hero from './components/Hero.jsx';
 import Menu from './components/Menu.jsx';
 import AboutContact from './components/AboutContact.jsx';
+import Auth from './components/Auth.jsx';
 
 function App() {
   const [theme, setTheme] = useState('light');
@@ -79,6 +80,7 @@ function App() {
         <Hero />
         <Menu onAddToCart={addToCart} />
         <AboutContact />
+        <Auth />
       </main>
       <footer className="border-t border-neutral-200 py-10 text-center text-sm dark:border-neutral-800">
         <p className="opacity-70">© {new Date().getFullYear()} Brew Haven — Crafted with care.</p>
